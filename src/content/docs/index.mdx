@@ -1,27 +1,28 @@
 ---
 title: Personal Game Wiki Sandbox
-description: Ad-free multi-game personal reference built with Astro Starlight.
+description: Clean, ad-free game documentation and custom interactive codices.
 template: splash
 hero:
-  tagline: Clean, fast, ad-free personal wiki hub for documenting multiple games.
+  tagline: Ad-free game wikis—available in both clean Markdown docs and a custom 3-theme Interactive Game Codex.
   actions:
-    - text: Open Gunfire Reborn Wiki
-      link: games/gunfire-reborn/overview/
+    - text: Launch Multi-Design Gunfire Codex
+      link: /starlight-wiki-sandbox/codex/
+      icon: rocket
+    - text: Browse Markdown Docs
+      link: /starlight-wiki-sandbox/games/gunfire-reborn/overview/
       icon: right-arrow
-    - text: How to Add Another Game
-      link: guides/adding-games/
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Active Game Wikis
+## Featured Game Hubs
 
 <CardGrid stagger>
-  <Card title="Gunfire Reborn" icon="rocket">
-    Cleaned, bloat-free reference covering all 14+2 Heroes, Stage Gemini scaling, Crown Prince trees, Elemental Fusions, and Seasons 1–8.
+  <Card title="Custom Multi-Design Codex (Non-Starlight UI)" icon="star">
+    Bypass the standard docs layout with 3 switchable aesthetics (**Spirit Tavern**, **Tactical Armory HUD**, and **Strategy Atlas**), interactive 77-weapon & bestiary filters, and a live 6-stage Damage Calculator: [Open Standalone Codex](/starlight-wiki-sandbox/codex/).
   </Card>
-  <Card title="Multi-Game Ready" icon="open-book">
-    Add any other game under `src/content/docs/games/` and register its folder in `astro.config.mjs`.
+  <Card title="Gunfire Reborn Markdown Reference" icon="open-book">
+    Clean, bloat-free Markdown tables covering [All 16 Heroes](/starlight-wiki-sandbox/games/gunfire-reborn/all-heroes/), [77 Weapons](/starlight-wiki-sandbox/games/gunfire-reborn/weapons/), and [Scrolls, Gemini & Damage Math](/starlight-wiki-sandbox/games/gunfire-reborn/scrolls-bestiary-calculator/).
   </Card>
 </CardGrid>

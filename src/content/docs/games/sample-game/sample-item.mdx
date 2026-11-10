@@ -1,0 +1,26 @@
+---
+title: Sample Item Entry
+description: Example item page using the custom game wiki Infobox component.
+---
+
+import Infobox from '../../../../components/Infobox.astro';
+
+<Infobox
+  title="Sunforged Blade"
+  subtitle="One-Handed Sword"
+  badge="Rare"
+  rows={[
+    { label: 'Item ID', value: 'wpn_sun_01' },
+    { label: 'Base Attack', value: '142' },
+    { label: 'Element', value: 'Fire' },
+    { label: 'Verified Patch', value: '1.04' },
+  ]}
+/>
+
+Example item article inside `src/content/docs/games/sample-game/`. Duplicate this folder for any game you want to document.
+
+## Drop Locations
+
+| Source | Area | Drop Rate |
+| :--- | :--- | ---: |
+| Iron Warden | Sunken Foundry | 12.5% |

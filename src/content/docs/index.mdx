@@ -5,23 +5,23 @@ template: splash
 hero:
   tagline: Clean, fast, ad-free personal wiki hub for documenting multiple games.
   actions:
-    - text: How to Add a Game
-      link: guides/adding-games/
+    - text: Open Gunfire Reborn Wiki
+      link: games/gunfire-reborn/overview/
       icon: right-arrow
-    - text: Sample Game Entry
-      link: games/sample-game/sample-item/
+    - text: How to Add Another Game
+      link: guides/adding-games/
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Wiki Hub
+## Active Game Wikis
 
 <CardGrid stagger>
-  <Card title="Multi-Game Folders" icon="open-book">
-    Each game gets its own clean folder under `src/content/docs/games/` and its own sidebar section.
+  <Card title="Gunfire Reborn" icon="rocket">
+    Cleaned, bloat-free reference covering all 14+2 Heroes, Stage Gemini scaling, Crown Prince trees, Elemental Fusions, and Seasons 1–8.
   </Card>
-  <Card title="Reusable Infoboxes" icon="star">
-    Drop `<Infobox />` into any `.mdx` article for structured item, boss, or weapon cards without Fandom clutter.
+  <Card title="Multi-Game Ready" icon="open-book">
+    Add any other game under `src/content/docs/games/` and register its folder in `astro.config.mjs`.
   </Card>
 </CardGrid>

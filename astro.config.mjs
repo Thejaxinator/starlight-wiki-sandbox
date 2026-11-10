@@ -19,11 +19,16 @@ export default defineConfig({
       customCss: ['./src/styles/wiki.css'],
       sidebar: [
         {
+          label: 'Gunfire Reborn',
+          autogenerate: { directory: 'games/gunfire-reborn' },
+        },
+        {
           label: 'Wiki Setup & Guides',
           autogenerate: { directory: 'guides' },
         },
         {
           label: 'Sample Game',
+          collapsed: true,
           autogenerate: { directory: 'games/sample-game' },
         },
       ],

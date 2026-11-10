@@ -1,0 +1,81 @@
+---
+title: Crown Prince
+description: Base stats, Hero Talents, Ascension trees, and Spiritual Blessings for Crown Prince.
+sidebar:
+  order: 3
+---
+
+import Infobox from '../../../../components/Infobox.astro';
+
+<Infobox
+  title="Crown Prince"
+  subtitle="太子 (Tàizǐ)"
+  badge="Base Hero"
+  rows={[
+    { label: 'Unlock', value: 'Default' },
+    { label: 'Health', value: '65–90' },
+    { label: 'Shields', value: '65–110' },
+    { label: 'Shield Recharge', value: '10%/s (3s delay)' },
+    { label: 'Movement Speed', value: '5.0' },
+    { label: 'Primary Skill', value: 'Energy Orb' },
+    { label: 'Secondary Skill', value: 'Smoke Grenade' },
+  ]}
+/>
+
+**Crown Prince** specializes in elemental status application, fusion reactions, and crowd control. **Smoke Grenade** reliably applies **Decay** in an area, letting any Fire or Lightning weapon immediately trigger **Combustion** or **Miasma**, while **Energy Orb** locks targets in place.
+
+## Hero Talents
+
+| Talent | Required Level | Cost (Soul Essence) | Effect |
+| :--- | ---: | ---: | :--- |
+| **Efficient Orb** | — | 25 | Energy Orb cooldown -2s |
+| **Mystic Guard** | 10 | 35 | Max Shield +20 |
+| **Large Area Smoke** | 30 | 60 | Smoke Grenade radius +40% |
+| **Energy Charge** | 45 | 125 | Recover 5% Shield for each enemy hit by Energy Orb |
+| **Contingency Plan** | 60 | 255 | Per 10% Shield lost: +5% Shield recovery speed and -5% recharge delay |
+
+## Ascensions
+
+### Element Tree (Dominance)
+
+| Ascension | Level 1 / Level 2 / Level 3 |
+| :--- | :--- |
+| **Wildfire** | On killing (Lv 1–2) or hitting (Lv 3) an enemy under an Elemental Effect, gain +40% / +50% / +60% RoF for 6s. |
+| **Elemental Rage** | +30% / +60% / +120% DMG against enemies affected by any Elemental Effect. |
+| **Energy Echo** | Single-rank: Energy Orb applies your held weapon's Elemental Effect at 100% chance. |
+| **Pyrodominance** | +40% / +80% / +120% Fire DMG; Lv 3 doubles Burning and Combustion DMG. |
+| **Electrodominance** | +40% / +80% / +120% Lightning DMG; Lv 3 adds +120% Weapon DMG against Shocked enemies. |
+| **Acidominance** | +40% / +80% / +120% Corrosion DMG; Lv 3 spawns a Smoke Grenade cloud on critical hit (3s cooldown). |
+
+### Smoke Tree (Hex)
+
+| Ascension | Level 1 / Level 2 / Level 3 |
+| :--- | :--- |
+| **Backpack Expansion** | +4 / +8 / +12 Smoke Grenade capacity; Lv 3 refunds 1 grenade every 2 thrown. |
+| **Hex Smoke** | Enemies hit deal -40% / -50% / -60% DMG and take +20% / +40% / +60% DMG for 6s / 6s / 20s. |
+| **Elemental Shield** | Casting Smoke Grenade grants +30 / +60 / +90 max Shield for 6s / 6s / 20s (Lv 3 grants Elemental Effect immunity). |
+| **Toxic Smoke** | Smoke Grenades deal +300% / +400% / +500% base DMG and gain +100% base DMG/s after detonation. |
+| **Acidic Explosion** | Single-rank: Enemies affected by Smoke Grenades explode on death. |
+| **Smoke Genius** | Smoke Grenades last +1s / +2s / +3s longer and tick 20% / 30% / 50% faster. |
+
+### Orb Tree (Arcane)
+
+| Ascension | Level 1 / Level 2 / Level 3 |
+| :--- | :--- |
+| **Chained Duration** | Energy Orb freeze lasts +2s / +4s / +6s; Lv 3 reduces cooldown by 30%. |
+| **Blinding Sphere** | Explosion radius +2m / +4m / +6m and pierces barriers; Lv 3 adds +50% Skill DMG per target hit. |
+| **Power Source** | Energy Orb gains +1 / +2 / +5 charges. |
+| **Energy Bolt** | Energy Orb DMG +200% / +400% / +600%, with multi-explosion chances (50% 2x; 20%/35% 3x; Lv 3 15% 4x). |
+| **Energy Blade** | Next weapon hit after Energy Orb gains +300% / +400% / +500% weapon DMG and cleaves nearby foes for 50% / 75% / 100%. |
+| **Advanced Shield** | Single-rank: Casting Energy Orb grants +60% Shield recharge speed, -60% delay, and uninterrupted recharge for 6s. |
+
+## Hero-Specific Spiritual Blessings (Reincarnation)
+
+| Blessing | Cost | Effect |
+| :--- | ---: | :--- |
+| **Splinter Orb** | 60 | Fires 2 extra orbs left and right; -1s Energy Orb cooldown per enemy hit. |
+| **Smogbound Zone** | 120 | +40% Smoke Grenade range, +5s duration, +20% ally DMG Resistance inside smoke; enemies inside take +50% Elemental DMG and +100% status chance. |
+| **Elemental Maestro** | 150 | Ignores elemental defense penalties (-25% removed while keeping +50% bonuses); +60% / +90% multiplicative DMG on targets with 2 / 3 active elements. |
+| **Elemental Orb** | 150 | Weapon hits spawn an Elemental Orb (3s base CD, cycles element on reload); stacks up to 25x for +125% Elemental DMG and -2.5s orb CD. |
+
+*Adapted and cleaned from [Gunfire Reborn Wiki — Crown Prince](https://gunfirereborn.fandom.com/wiki/Crown_Prince) under CC BY-SA.*

@@ -1,0 +1,21 @@
+---
+const { title, subtitle, badge, rows = [] } = Astro.props;
+---
+
+<aside class="wiki-infobox not-content" aria-label={`${title} infobox`}>
+  <div class="wiki-infobox-header">
+    <div>
+      <div class="wiki-infobox-title">{title}</div>
+      {subtitle && <div class="wiki-infobox-subtitle">{subtitle}</div>}
+    </div>
+    {badge && <span class="wiki-infobox-badge">{badge}</span>}
+  </div>
+  <dl class="wiki-infobox-list">
+    {rows.map((row) => (
+      <div class="wiki-infobox-row">
+        <dt>{row.label}</dt>
+        <dd>{row.value}</dd>
+      </div>
+    ))}
+  </dl>
+</aside>

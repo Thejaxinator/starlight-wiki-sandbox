@@ -1,0 +1,27 @@
+---
+title: Personal Game Wiki Sandbox
+description: Ad-free multi-game personal reference built with Astro Starlight.
+template: splash
+hero:
+  tagline: Clean, fast, ad-free personal wiki hub for documenting multiple games.
+  actions:
+    - text: How to Add a Game
+      link: guides/adding-games/
+      icon: right-arrow
+    - text: Sample Game Entry
+      link: games/sample-game/sample-item/
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Wiki Hub
+
+<CardGrid stagger>
+  <Card title="Multi-Game Folders" icon="open-book">
+    Each game gets its own clean folder under `src/content/docs/games/` and its own sidebar section.
+  </Card>
+  <Card title="Reusable Infoboxes" icon="star">
+    Drop `<Infobox />` into any `.mdx` article for structured item, boss, or weapon cards without Fandom clutter.
+  </Card>
+</CardGrid>

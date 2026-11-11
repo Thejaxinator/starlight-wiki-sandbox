@@ -22,8 +22,9 @@ export default defineConfig({
           items: [
             // Use `link` (never `slug`) for static HTML files inside `public/`,
             // and omit `/public` because Astro serves `public/*` from the site root.
-            { label: 'Gunfire Reborn HUD Codex', link: '/gunfire-codex.html' },
+       { label: 'Destiny: Rising M.I.N.D. Codex', link: '/destiny-rising-codex.html' },
             { label: 'Destiny 1 & 2 Fallen Codex', link: '/destiny-2-fallen.html' },
+            { label: 'Gunfire Reborn HUD Codex', link: '/gunfire-codex.html' },
           ],
         },
         {

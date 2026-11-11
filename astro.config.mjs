@@ -1,23 +1,31 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-const [owner, repo] = (process.env.GITHUB_REPOSITORY ?? '').split('/');
-
 export default defineConfig({
-  site: owner ? `https://${owner.toLowerCase()}.github.io` : undefined,
-  base: repo ? `/${repo}` : undefined,
+  site: 'https://thejaxinator.github.io',
+  base: '/starlight-wiki-sandbox',
   integrations: [
     starlight({
       title: 'Personal Game Wiki Sandbox',
-      description: 'Multi-game ad-free reference powered by Astro Starlight.',
       head: [
         {
           tag: 'meta',
-          attrs: { name: 'robots', content: 'noindex, nofollow' },
+          attrs: {
+            name: 'robots',
+            content: 'noindex, nofollow',
+          },
         },
       ],
-      customCss: ['./src/styles/wiki.css'],
       sidebar: [
+        {
+          label: 'Standalone Game HUD Codexes',
+          items: [
+            // Use `link` (never `slug`) for static HTML files inside `public/`,
+            // and omit `/public` because Astro serves `public/*` from the site root.
+            { label: 'Gunfire Reborn HUD Codex', link: '/gunfire-codex.html' },
+            { label: 'Destiny 1 & 2 Fallen Codex', link: '/destiny-2-fallen.html' },
+          ],
+        },
         {
           label: 'Gunfire Reborn',
           autogenerate: { directory: 'games/gunfire-reborn' },
@@ -28,7 +36,6 @@ export default defineConfig({
         },
         {
           label: 'Sample Game',
-          collapsed: true,
           autogenerate: { directory: 'games/sample-game' },
         },
       ],

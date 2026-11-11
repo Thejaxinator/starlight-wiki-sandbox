@@ -1,22 +1,21 @@
 ---
 title: Personal Game Wiki Sandbox
-description: Clean, ad-free game documentation and custom interactive codices.
+description: Ad-free game wikis—available in both clean Markdown docs and standalone game-authentic UI codexes.
 template: splash
 hero:
-  tagline: Ad-free game wikis—available in both clean Markdown docs and a custom 3-theme Interactive Game Codex.
+  tagline: Ad-free game wikis—available in both clean Markdown docs and custom game-authentic standalone codexes.
   actions:
-    - text: Launch Multi-Design Gunfire Codex
-      link: /starlight-wiki-sandbox/codex.html
-      icon: rocket
+    - text: Launch Gunfire Combat HUD Codex
+      link: /starlight-wiki-sandbox/gunfire-codex.html
+      icon: right-arrow
+      variant: primary
+    - text: Browse Destiny Fallen Codex
+      link: /starlight-wiki-sandbox/destiny-2-fallen.html
+      icon: external
+      variant: secondary
     - text: Browse Markdown Docs
       link: /starlight-wiki-sandbox/games/gunfire-reborn/overview/
-      icon: right-arrow
-    - text: Browse Destiny Codex
-      link: /starlight-wiki-sandbox/public/destiny-2-fallen.html
-      icon: right-arrow
-    - text: Browse Multi-Design Gunfire Codex 2
-      link: /starlight-wiki-sandbox/public/gunfire-codex.html
-      icon: right-arrow
+      icon: open-book
       variant: minimal
 ---
 
@@ -25,10 +24,13 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 ## Featured Game Hubs
 
 <CardGrid stagger>
-  <Card title="Custom Multi-Design Codex (Non-Starlight UI)" icon="star">
-    Bypass the standard docs layout with 3 switchable aesthetics (**Spirit Tavern**, **Tactical Armory HUD**, and **Strategy Atlas**), interactive 77-weapon & bestiary filters, and a live 6-stage Damage Calculator: [Open Standalone Codex](/starlight-wiki-sandbox/codex.html).
+  <Card title="Gunfire Reborn — Live In-Game Combat HUD" icon="rocket">
+    Standalone game-authentic Wuxia HUD with interactive Hero Talent &amp; 3-Branch Ascension Trees across all 16 Heroes, 39-node Global Soul Essence Tree, 77 Weapons, 216 Scrolls, and 6-stage Damage Calculator: [Open Gunfire Combat HUD](/starlight-wiki-sandbox/gunfire-codex.html).
+  </Card>
+  <Card title="Destiny 1 & 2 — Fallen (Eliksni) Director Codex" icon="star">
+    Built on the `.destiny` UI framework (`eververse.trade`) with official Bungie &amp; Destinypedia archive renders (zero AI art), D1-vs-D2 stat deltas, Difficulty Shield Scaler, 15 Houses/Syndicates, Exotic Arsenal, and Raid Bosses: [Open Destiny Fallen Codex](/starlight-wiki-sandbox/destiny-2-fallen.html).
   </Card>
   <Card title="Gunfire Reborn Markdown Reference" icon="open-book">
-    Clean, bloat-free Markdown tables covering [All 16 Heroes](/starlight-wiki-sandbox/games/gunfire-reborn/all-heroes/), [77 Weapons](/starlight-wiki-sandbox/games/gunfire-reborn/weapons/), and [Scrolls, Gemini, Bestiary & Damage Math](/starlight-wiki-sandbox/games/gunfire-reborn/scrolls-inscriptions-bestiary/).
+    Clean, bloat-free Markdown tables covering [All 16 Heroes](/starlight-wiki-sandbox/games/gunfire-reborn/all-heroes/), [77 Weapons](/starlight-wiki-sandbox/games/gunfire-reborn/weapons/), and [Scrolls, Gemini, Bestiary &amp; Damage Math](/starlight-wiki-sandbox/games/gunfire-reborn/scrolls-inscriptions-bestiary/).
   </Card>
 </CardGrid>
